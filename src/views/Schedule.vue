@@ -1,21 +1,26 @@
 <template>
-  <div id="schedule">
-      <Navbar viewname="Schedule"></Navbar>
-      <h3>Schedule</h3>
+  <div class="schedule">
+    <Navbar viewname="schedule"></Navbar>
+    <MonthCard month="september" t1="asd" t2="asdd" day="04/39/12" time="9hs" location="Aksjdf"></MonthCard>
   </div>
 </template>
 
 <script>
-import Navbar from "../components/navbar.vue";
+import Navbar from "../components/navbar.vue"
+import MonthCard from "../components/card.vue"
 
 export default {
-    name: 'schedule',
-    components: {
-      Navbar
-    }
+  name: 'Schedule',
+  components: {
+    Navbar,
+    MonthCard,
+  }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    *{
+        margin: 0;
+        padding: 0;
+    }
 </style>

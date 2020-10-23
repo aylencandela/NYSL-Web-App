@@ -1,7 +1,6 @@
 <template>
-  <div id="register">
-      <Navbar viewname="Register"></Navbar>
-      <h3>register</h3>
+  <div class="register">
+    <Navbar viewname="register"></Navbar>
   </div>
 </template>
 
@@ -9,13 +8,13 @@
 import Navbar from "../components/navbar.vue";
 
 export default {
-    name: 'register',
-    components: {
-      Navbar
-    }
+  name: 'Register',
+  components: {
+    Navbar
+  }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

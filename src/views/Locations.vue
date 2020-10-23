@@ -1,7 +1,6 @@
 <template>
-  <div id="locations">
-      <Navbar viewname="Locations"></Navbar>
-    <h3>This is a Locations page</h3>
+  <div class="locations">
+    <Navbar viewname="locations"></Navbar>
   </div>
 </template>
 
@@ -9,13 +8,13 @@
 import Navbar from "../components/navbar.vue";
 
 export default {
-    name: 'locations',
-    components: {
-      Navbar
-    }
+  name: 'Locations',
+  components: {
+    Navbar
+  }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
