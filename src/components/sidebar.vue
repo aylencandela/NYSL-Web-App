@@ -102,19 +102,31 @@ export default {
       text-transform: unset;
       letter-spacing: 0;
 
-      ul li {
-        padding: 10px;
-        list-style: none;
-        width: 100%;
-      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          width: 100%;
+          a {
+            font-weight: bold;
+            padding: 15px 20px;
+            padding-left: 30px;
+            color: #9799ca;
+            display: flex;
+            justify-content: space-between;
+            text-transform: none;
 
-      a {
-        font-weight: bold;
-        color: #9799ca;
+            i{
+              font-size: 20px;
+            }
 
-        &.router-link-exact-active {
-          color: white;
-          background-color: #9799ca;
+            &.router-link-exact-active {
+              color: white;
+              background-color: #9799caad;
+              border-right: 5px #dda448 solid;
+            }
+          }
         }
       }
     }

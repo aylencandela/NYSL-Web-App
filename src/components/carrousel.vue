@@ -8,7 +8,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- Por qué no reconoce la url? la toma literal, so hay que usar un require-->
+          <!-- Por qué no reconoce la url? => la toma literal, so hay que usar un require-->
           <img class="d-block w-100" :src="require('../assets/' + fstimg + '.jpg')" alt="First slide">
         </div>
         <div class="carousel-item">
@@ -48,6 +48,6 @@ export default {
 <style lang="scss" scoped>
   .carousel, .carousel-inner img {
     height: 45vh;
-    opacity: 90%;
+    // opacity: 90%;
   }
 </style>

@@ -32,16 +32,12 @@ import Sidebar from "./sidebar"
 </script>
 
 <style lang="scss" scoped>
-  * {
+  * , .navbar{
       padding: 0;
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       font-size: 15px;
   }
-
-  // .navbar {
-  //   margin-bottom: 50px;
-  // }
 
   #header {
     background-color: #100080;
@@ -59,15 +55,15 @@ import Sidebar from "./sidebar"
       }
   
       #logo {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin-right: 15px;
       } 
 
       #menu .line{
-        margin: 6px 1rem;
+        margin: 5px 15px;
         width: 2rem;
-        height: 4px;
+        height: 3px;
         background: white;
         border-radius: 5px;
       }
