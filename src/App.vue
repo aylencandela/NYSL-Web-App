@@ -7,6 +7,8 @@
 <style lang="scss" scoped>
 * {
   margin: 0;
+  height: 100vh;
+  background-color: #efece6;
 }
 
 </style>

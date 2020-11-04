@@ -87,8 +87,8 @@
 
   .btn-green {
     color: #fff;
-    background-color: #42b983;
-    border-color: #42b983;
+    background-color: #50c35d;
+    border-color:#50c35d;
   }
 
   #accordion-1, #accordion-2, #accordion-3, #accordion-4, #accordion-5, #accordion-6{

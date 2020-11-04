@@ -8,9 +8,10 @@
     >
     <!-- Por qué la sig slide se baja y despues vuelve a arriba? -->
       <b-carousel-slide v-for="(game,index) in month" :key="index">
-        <template slot="img">
-            <div class="card">
-              <div id="title">
+        <template slot="img"> 
+          <div class="contenedor">
+            <div class="myCard">
+              <div id="title" :class="color">
                 <h1>{{game.month}}</h1>
               </div>
               <div id="description">
@@ -27,6 +28,7 @@
                 </div>
               </div>
             </div>
+          </div>
         </template>
       </b-carousel-slide>
     </b-carousel>
@@ -37,19 +39,23 @@
 export default {
   name: 'MonthCard',
   props: {
-      month: Array
+      month: Array,
+      color: String,
   }
 }
 </script>
 
 <style lang="scss" scoped>
 
-  *{
-    margin: 0;
-    padding: 0;
+  .contenedor{
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .card {
+  .myCard {
     width: 90vw;
     height: 200px;
     border-radius: 15px;
@@ -63,11 +69,19 @@ export default {
 
     #title {
       grid-area: title;
-      background-color: #50c35d;
+      padding-top: 7px;
       border-radius: 15px 15px 0 0;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &.bg-yellow{
+        background-color: #dda448;
+      }
+
+      &.bg-green{
+        background-color: #50c35d;
+      }
       
       h1{
         color: white;
@@ -81,12 +95,14 @@ export default {
     #description {
       grid-area: description;
       display: flex;
+      justify-content: center;
       align-items: center;
 
       #teams {
         width: 55%;
         align-self: flex-start;
-        padding: 15px;
+        text-align: center;
+        padding-top: 15px;
         
         h3 {
           font-weight: 700;
@@ -113,4 +129,5 @@ export default {
       }
     }
   }
+  
 </style>
