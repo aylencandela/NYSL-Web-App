@@ -1,18 +1,21 @@
 <template>
   <div class="carrousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- Por qué no reconoce la url? => la toma literal, so hay que usar un require-->
           <img class="d-block w-100" :src="require('../assets/' + fstimg + '.jpg')" alt="First slide">
+          <div class="carousel-caption">
+            <h5>{{title}}</h5>
+            <p>{{desc}}</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" :src="require('../assets/' + sndimg + '.jpg')" alt="Second slide">
+          <div class="carousel-caption">
+            <h5>{{title2}}</h5>
+            <p>{{desc2}}</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" :src="require('../assets/' + trdimg + '.jpg')" alt="Third slide">
@@ -40,7 +43,11 @@ export default {
       fstimg: String,
       sndimg: String,
       trdimg: String,
-      fthimg: String
+      fthimg: String,
+      title: String,
+      desc: String,
+      title2: String,
+      desc2: String
     }
 }
 </script>

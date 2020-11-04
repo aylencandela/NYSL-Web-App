@@ -5,11 +5,13 @@
     id="carousel-games"
     controls
     :interval="4000"
+    fade
     >
     <!-- Por qué la sig slide se baja y despues vuelve a arriba? -->
       <b-carousel-slide v-for="(game,index) in month" :key="index">
-        <template slot="img">
-            <div class="card">
+        <template slot="img"> 
+          <div class="contenedor">
+            <div class="myCard">
               <div id="title">
                 <h1>{{game.month}}</h1>
               </div>
@@ -27,6 +29,7 @@
                 </div>
               </div>
             </div>
+          </div>
         </template>
       </b-carousel-slide>
     </b-carousel>
@@ -49,7 +52,11 @@ export default {
     padding: 0;
   }
 
-  .card {
+  .contenedor{
+    display: inline;
+  }
+
+  .myCard {
     width: 90vw;
     height: 200px;
     border-radius: 15px;
@@ -113,4 +120,5 @@ export default {
       }
     }
   }
+  
 </style>

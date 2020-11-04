@@ -3,7 +3,7 @@ export let fallSchedule =
         "september": [
             {
                 "month": "September",
-                "date": "01",
+                "date": "01/09",
                 "team1": "U2",
                 "team2": "U4",
                 "location": "AJ Katzenmaier",
@@ -11,7 +11,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "01",
+                "date": "01/09",
                 "team1": "U3",
                 "team2": "U2",
                 "location": "Greenbay",
@@ -19,7 +19,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "08",
+                "date": "08/09",
                 "team1": "U5",
                 "team2": "U6",
                 "location": "Howard A Yeager",
@@ -27,7 +27,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "08",
+                "date": "08/09",
                 "team1": "U6",
                 "team2": "U1",
                 "location": "Marjorie P Hart",
@@ -35,7 +35,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "15",
+                "date": "15/09",
                 "team1": "U2",
                 "team2": "U4",
                 "location": "North",
@@ -43,7 +43,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "15",
+                "date": "15/09",
                 "team1": "U3",
                 "team2": "U5",
                 "location": "AJ Katzenmaier",
@@ -51,7 +51,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "22",
+                "date": "22/09",
                 "team1": "U1",
                 "team2": "U3",
                 "location": "South",
@@ -59,7 +59,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "22",
+                "date": "22/09",
                 "team1": "U2",
                 "team2": "U6",
                 "location": "Howard A Yeager",
@@ -67,7 +67,7 @@ export let fallSchedule =
             },
             {
                 "month": "September",
-                "date": "29",
+                "date": "29/09",
                 "team1": "U4",
                 "team2": "U5",
                 "location": "Greenbay",
@@ -77,7 +77,7 @@ export let fallSchedule =
         "october": [
             {
                 "month": "October",
-                "date": "06",
+                "date": "06/10",
                 "team1": "U2",
                 "team2": "U5",
                 "location": "Marjorie P Hart",
@@ -85,7 +85,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "06",
+                "date": "06/10",
                 "team1": "U1",
                 "team2": "U6",
                 "location": "South",
@@ -93,7 +93,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "13",
+                "date": "13/10",
                 "team1": "U3",
                 "team2": "U4",
                 "location": "Howard A Yeager",
@@ -101,7 +101,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "08",
+                "date": "08/10",
                 "team1": "U5",
                 "team2": "U1",
                 "location": "Greenbay",
@@ -109,7 +109,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "20",
+                "date": "20/10",
                 "team1": "U6",
                 "team2": "U3",
                 "location": "North",
@@ -117,7 +117,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "20",
+                "date": "20/10",
                 "team1": "U2",
                 "team2": "U4",
                 "location": "Marjorie P Hart",
@@ -125,7 +125,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "27",
+                "date": "27/10",
                 "team1": "U3",
                 "team2": "U1",
                 "location": "AJ Katzenmaier",
@@ -133,7 +133,7 @@ export let fallSchedule =
             },
             {
                 "month": "October",
-                "date": "27",
+                "date": "27/10",
                 "team1": "U5",
                 "team2": "U6",
                 "location": "Howard A Yeager",

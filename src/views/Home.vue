@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <Navbar viewname="home"></Navbar>
-    <Carrousel fstimg="1" sndimg="2" trdimg="3" fthimg="4"></Carrousel>
-    <Carrousel fstimg="5" sndimg="6" trdimg="7" fthimg="8"></Carrousel>
+    <Carrousel title="August 4" desc="NYSL Fundraiser" title2="August 6" desc2="Season Kick-Off: Meet the Teams" fstimg="1" sndimg="2" trdimg="3" fthimg="4"></Carrousel>
+    <Carrousel title="September 1" desc="First Game of the Season (Check Schedule for details)" fstimg="5" sndimg="6" trdimg="7" fthimg="8"></Carrousel>
   </div>
 </template>
 
