@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <Navbar viewname="register"></Navbar>
-    <div class="mt-4 mb-4">
+    <div class="mt-4 pb-4">
       <b-container>
         <Form></Form>
       </b-container>

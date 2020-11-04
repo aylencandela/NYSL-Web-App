@@ -7,7 +7,7 @@
           id="input-1"
           v-model="form.name"
           required
-          placeholder="Enter your name"
+          placeholder="Enter name"
         ></b-form-input>
       </b-form-group>
 
@@ -16,7 +16,7 @@
           id="input-2"
           v-model="form.lastname"
           required
-          placeholder="Enter your last name"
+          placeholder="Enter last name"
         ></b-form-input>
       </b-form-group>
 
