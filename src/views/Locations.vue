@@ -1,6 +1,6 @@
 <template>
   <div class="locations">
-    <Navbar viewname="locations"></Navbar>
+    <Nav viewname="locations"></Nav>
     <div id="accordion">
       <Accordion></Accordion>
     </div>
@@ -8,22 +8,22 @@
 </template>
 
 <script>
-import Navbar from "../components/navbar.vue";
-import Accordion from "../components/locataccordion.vue"
+import Nav from "../components/nav.vue";
+import Accordion from "../components/locataccordion.vue";
 
 export default {
-  name: 'Locations',
+  name: "Locations",
   components: {
-    Navbar,
-    Accordion
-  }
-}
+    Nav,
+    Accordion,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  #accordion{
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-  }
+#accordion {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
 </style>
