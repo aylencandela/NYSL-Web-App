@@ -1,7 +1,7 @@
 <template>
   <div class="home">
+    <Nav viewname="home"></Nav>
     <template v-if="!landscape">
-      <Nav viewname="home"></Nav>
       <Carrousel
         title="August 4"
         desc="NYSL Fundraiser"
@@ -22,13 +22,19 @@
       ></Carrousel>
     </template>
     <template v-else>
-      <Nav viewname="home"></Nav>
+      <Carrousel2
+        fstimg="1"
+        sndimg="2"
+        trdimg="3"
+        fthimg="4"
+      ></Carrousel2>
     </template>
   </div>
 </template>
 
 <script>
 import Carrousel from "../components/carrousel.vue";
+import Carrousel2 from "../components/landscapecarrousel.vue";
 import Nav from "../components/nav.vue";
 import { mapState } from "vuex";
 
@@ -37,6 +43,7 @@ export default {
   components: {
     Nav,
     Carrousel,
+    Carrousel2
   },
   data: function () {
     return {};

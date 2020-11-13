@@ -5,22 +5,24 @@
       style="text-shadow: 0px 0px 2px #000"
       fade
       indicators
-      img-height="500"
     >
       <b-carousel-slide
-        caption="First slide"
+        caption="August 4"
+        text="NYSL Fundraiser"
         :img-src="require('../assets/' + fstimg + '.jpg')"
       ></b-carousel-slide>
       <b-carousel-slide
-        caption="Second Slide"
+        caption="August 6"
+        text="Season Kick-Off: Meet the Teams"
         :img-src="require('../assets/' + sndimg + '.jpg')"
       ></b-carousel-slide>
       <b-carousel-slide
-        caption="Third Slide"
+        caption="September 1"
+        text="First Game of the Season (Check Schedule for details)"
         :img-src="require('../assets/' + trdimg + '.jpg')"
       ></b-carousel-slide>
       <b-carousel-slide
-        caption="Fourth Slide"
+        caption="More events coming!"
         :img-src="require('../assets/' + fthimg + '.jpg')"
       ></b-carousel-slide>
     </b-carousel>
@@ -29,7 +31,7 @@
 
 <script>
 export default {
-  name: "Carrousel",
+  name: "Carrousel2",
   props: {
     fstimg: String,
     sndimg: String,
@@ -41,16 +43,11 @@ export default {
 
 <style lang="scss" scoped>
 .carousel-item {
-  height: 45vh !important;
+  height: 90vh !important;
   img {
     &.img-fluid {
-      height: 45vh !important;
+      height: 100vh !important;
     }
   }
-}
-
-.img-fluid {
-  display: inline;
-  height: 45vh !important;
 }
 </style>
