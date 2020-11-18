@@ -12,8 +12,8 @@
               <div id="description">
                 <div id="teams">
                   <h3>{{ game.team1 }} vs {{ game.team2 }}</h3>
-                  <img :src="require('../assets/shields/def/' + game.team1 + '.png')" class="shields mr-3">
-                  <img :src="require('../assets/shields/def/' + game.team2 + '.png')" class="shields">
+                  <img :src="require('../assets/shields/' + game.team1 + '.png')" class="shields mr-3">
+                  <img :src="require('../assets/shields/' + game.team2 + '.png')" class="shields">
 
                 </div>
                 <div id="info">
