@@ -49,7 +49,6 @@ export default {
 .cont {
   margin-top: 5vh;
   max-width: 100vw;
-  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

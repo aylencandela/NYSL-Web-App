@@ -12,6 +12,9 @@
               <div id="description">
                 <div id="teams">
                   <h3>{{ game.team1 }} vs {{ game.team2 }}</h3>
+                  <img :src="require('../assets/shields/def/' + game.team1 + '.png')" class="shields mr-3">
+                  <img :src="require('../assets/shields/def/' + game.team2 + '.png')" class="shields">
+
                 </div>
                 <div id="info">
                   <ul>
@@ -54,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .contenedor {
   width: 100vw;
-  height: 250px;
+  height: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +116,10 @@ export default {
       h3 {
         font-weight: 700;
         color: #100080;
+      }
+
+      .shields {
+        width: 4em;
       }
     }
 
