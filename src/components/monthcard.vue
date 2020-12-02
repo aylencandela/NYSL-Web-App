@@ -12,9 +12,14 @@
               <div id="description">
                 <div id="teams">
                   <h3>{{ game.team1 }} vs {{ game.team2 }}</h3>
-                  <img :src="require('../assets/shields/' + game.team1 + '.png')" class="shields mr-3">
-                  <img :src="require('../assets/shields/' + game.team2 + '.png')" class="shields">
-
+                  <img
+                    :src="require('../assets/shields/' + game.team1 + '.png')"
+                    class="shields mr-3"
+                  />
+                  <img
+                    :src="require('../assets/shields/' + game.team2 + '.png')"
+                    class="shields"
+                  />
                 </div>
                 <div id="info">
                   <ul>
@@ -31,7 +36,11 @@
                       >{{ game.location }}
                     </li>
                     <li>
-                      <i class="fa fa-comments" aria-hidden="true"></i>Chat
+                      <router-link
+                        :to="'/chatroom/' + game.month + '/' + index"
+                      >
+                        <i class="fa fa-comments" aria-hidden="true"></i>Chat
+                      </router-link>
                     </li>
                   </ul>
                 </div>
@@ -125,6 +134,10 @@ export default {
 
     #info {
       width: 45%;
+
+      ul {
+        padding-left: 5px;
+      }
 
       li {
         text-align: start;

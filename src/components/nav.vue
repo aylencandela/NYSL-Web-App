@@ -62,6 +62,11 @@
                   ><i class="fa fa-futbol-o"></i>Register</router-link
                 >
               </li>
+              <li>
+                <router-link to="/user"
+                  ><i class="fa fa-map-marker"></i>User</router-link
+                >
+              </li>
             </ul>
           </div>
           <router-view />
