@@ -199,7 +199,7 @@ export default {
           &.router-link-exact-active {
             color: white;
             background-color: #9799caad;
-            border-right: 5px #50c35d solid;
+            border-right: 5px #dda448 solid;
           }
         }
       }

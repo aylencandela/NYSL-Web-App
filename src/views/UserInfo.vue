@@ -21,7 +21,7 @@
                 d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"
               />
             </svg>
-            <h5>Full name: </h5>
+            <h5>Full name:</h5>
           </div>
           <p>{{ user.displayName }}</p>
         </li>
@@ -71,7 +71,7 @@
               <g></g>
               <g></g>
             </svg>
-            <h5>Email: </h5>
+            <h5>Email:</h5>
           </div>
           <p>{{ user.email }}</p>
         </li>
@@ -96,7 +96,7 @@
                   s-0.117,0.482-0.261,0.482h-5.7c-0.145,0-0.26-0.216-0.26-0.482C10.612,1.429,10.727,1.214,10.872,1.214z M13.722,25.469
                   c-0.703,0-1.275-0.572-1.275-1.276s0.572-1.274,1.275-1.274c0.701,0,1.273,0.57,1.273,1.274S14.423,25.469,13.722,25.469z
                   M19.995,21.1H7.448V3.373h12.547V21.1z"
-                            />
+                />
                 <g></g>
                 <g></g>
                 <g></g>
@@ -129,7 +129,7 @@
               <g></g>
               <g></g>
             </svg>
-            <h5>Phone number: </h5>
+            <h5>Phone number:</h5>
           </div>
           <p>{{ user.phoneNumber }}</p>
         </li>
@@ -152,7 +152,7 @@ export default {
 <style lang="scss" scoped>
 .bg-header {
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   background: linear-gradient(130deg, #100080, #2f33a8);
   border-radius: 0 0 35% 35%;
   box-shadow: 0px 10px 50px 10px grey;
@@ -170,6 +170,7 @@ export default {
     text-align: center;
     font-size: 24px;
     letter-spacing: 4px;
+    text-shadow: 0px 0px 10px black;
     text-transform: uppercase;
   }
 }
@@ -184,7 +185,7 @@ export default {
   border-top-color: #dda448;
   border-bottom-color: #100080;
 }
-.body{
+.body {
   margin-top: 20vh;
   height: 30vh;
   width: 100vw;
@@ -192,32 +193,32 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  ul li{
+  ul li {
+    display: flex;
+    flex-direction: column;
+    .icons {
       display: flex;
-      flex-direction: column;
-      .icons {
-        display: flex;
-        h5 {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 15px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-        }
-        svg {
-          margin-right: 1em;
-        }
+      h5 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
       }
-      p {
-        margin-top: 1em;
-        font-family: sans-serif;
-        width: 78vw;
-        height: 2.5em;
-        padding-top: .5em;
-        padding-left: .5em;
-        background-color: #bdbfffbe;
-        border-radius: 5px;
-        border-bottom: 5px #dda448 solid;
+      svg {
+        margin-right: 1em;
       }
+    }
+    p {
+      margin-top: 1em;
+      font-family: sans-serif;
+      width: 78vw;
+      height: 2.5em;
+      padding-top: 0.5em;
+      padding-left: 0.5em;
+      background-color: #a9abdfbe;
+      border-radius: 5px;
+      border-bottom: 5px #dda448 solid;
+    }
   }
 }
 </style>
