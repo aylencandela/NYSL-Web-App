@@ -64,7 +64,7 @@
               </li>
               <li>
                 <router-link to="/user"
-                  ><i class="fa fa-map-marker"></i>User</router-link
+                  ><i class="fa fa-user"></i>User</router-link
                 >
               </li>
             </ul>
@@ -199,7 +199,7 @@ export default {
           &.router-link-exact-active {
             color: white;
             background-color: #9799caad;
-            border-right: 5px #dda448 solid;
+            border-right: 5px #50c35d solid;
           }
         }
       }
